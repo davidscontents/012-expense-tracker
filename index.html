@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+    <div class="container">
+        <section class="heading">
+            <h1>Expense Tracker</h1>
+            <div class="balance">
+                <h2>Your Balance</h2>
+                <h3 id="net-amount">$</h3>
+            </div>
+        </section>
+        <section class="transaction-description">
+            <h3>Transactions</h3>
+            <hr />
+            <div class="transactions">
+                <!-- <div class="transaction">
+                    <div class="description">
+                        <p>Transaction</p>
+                        <p>+$0</p>
+                    </div>
+                    <div class="status-credit green">I</div>
+                </div>
+                <div class="transaction">
+                    <div class="description">
+                        <p>Transaction</p>
+                        <p>-$0</p>
+                    </div>
+                    <div class="status-credit red">E</div>
+                </div>
+                <div class="transaction">
+                    <div class="description">
+                        <p>Transaction</p>
+                        <p>+$0</p>
+                    </div>
+                    <div class="status-credit green">I</div>
+                </div> -->
+            </div>
+        </section>
+        <section class="transaction-form">
+            <h3>Add Transactions</h3>
+            <form id="transaction-input">
+                <div class="inputs">
+                    <div class="form">
+                        <label for="text-input">Text:</label>
+                        <input type="text" id="text-input" placeholder="Enter description" name="text" required>
+                        <button id="income-btn" type="button">
+                            <p id="income">$</p>
+                            <p>Income</p>
+                        </button>
+                    </div>
+                    <div class="form">
+                        <label for="amount">Amount:</label>
+                        <input type="number" id="amount" placeholder="Enter amount" name="amount" required>
+                        <button id="expense-btn" type="button">
+                            <p id="expense">$</p>
+                            <p>Expense</p>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </section>
+        
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
