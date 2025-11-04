@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    padding: 20px 40px;
+    box-shadow: 0px 0px 10px rgba(22, 22, 22, 0.5);
+    border-radius: 10px;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.transaction-description {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.transactions-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.transaction-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.description-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.description-flex p {
+    line-height: 2.4rem;
+}
+
+/* .status-credit {
+    width: 40px;
+    height: 40px;
+    color: white;
+    text-align: center;
+} */
+
+.transaction-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 10px;
+}
+
+#transaction-input {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.inputs {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form input {
+    width: 240px;
+    height: 40px;
+    padding-left: 5px;
+    font-size: 1rem;
+}
+
+.form button {
+    padding: auto;
+    color: white;
+    font-size: 1rem;
+    border-style: none;
+    border-radius: 5px;
+}
+
+#income-btn {
+    background-color: #4C763B;
+}
+
+#income-btn:active {
+    background-color: white;
+    color: #4C763B;
+    border: 2px solid #4C763B;
+}
+
+#expense-btn {
+    background-color: #E62727;
+}
+
+#expense-btn:active {
+    background-color: white;
+    color: #E62727;
+    border: 2px solid #E62727;
+}
+
+.green {
+    background-color: #4C763B;
+    width: 40px;
+    height: 40px;
+    color: white;
+    text-align: center;
+    line-height: 2.4rem;
+}
+
+.red {
+    background-color: #E62727;
+    width: 40px;
+    height: 40px;
+    color: white;
+    text-align: center;
+    line-height: 2.4rem;
+}
+
+.left-width {
+    width: 80%;
+}
+
+@media (max-width: 600px) {
+    .inputs {
+        flex-direction: column;
+    }
+
+    .description {
+        gap: 100px;
+    }
+}
